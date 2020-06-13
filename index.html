@@ -9,18 +9,37 @@
 
   <body>
     <header class="title" id="title">
-      <h2 class="title-name">alex carrie</h2>
-      <nav class="title-nav">
-        <a href="#title">Home</a>
-        <a href="#projects-section">Projects</a>
-        <a href="#contact-section">Contact</a>
+      <nav role="navigation">
+        <section id="menuToggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="#title">
+              <li>Home</li>
+            </a>
+            <a href="#about-section">
+              <li>About</li>
+            </a>
+            <a href="#projects-section">
+              <li>Projects</li>
+            </a>
+            <a href="#contact-section">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </section>
       </nav>
+      <h1 class="title-name">Alex Carrie</h1>
     </header>
 
-    <main>
+    <main class="main">
       <!-- ABOUT -->
       <section id="about-section" class="header-picture-container">
-        <h1 class="picture-text">Full Stack developer, based in Leeds.</h1>
+        <h1 class="picture-text">Junior Full Stack Developer.</h1>
         <img
           src="images/alex-carrie-and-wall.png"
           alt="Picture of me enjoying two Gins"
@@ -42,8 +61,6 @@
           <li>Degree in Music Production</li>
         </ul>
       </section>
-
-      <br />
 
       <!-- PROJECTS -->
       <section id="projects-section">
