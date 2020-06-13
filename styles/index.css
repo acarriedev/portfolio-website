@@ -1,1 +1,26 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
 
+/* Title */
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-name {
+  margin-block-start: 0.2px;
+}
+
+.title-nav {
+  margin-block-start: 0.2px;
+}
+
+.main-picture {
+  max-width: 100%;
+  height: auto;
+}
