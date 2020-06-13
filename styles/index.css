@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #232323;
-  color: #cdcdcd;
+  color: #232323;
+  background: #ffffff;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
@@ -10,10 +10,21 @@ h1 {
   margin-block-start: 1px;
   margin-block-end: 1px;
   margin-left: 15px;
+  color: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+}
+
+.picture-text {
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-left: 5px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.95);
+  z-index: 3;
 }
 
 .main {
-  margin: 5px;
+  border-top: solid white 2px;
 }
 
 .main-picture {
@@ -24,7 +35,7 @@ h1 {
 .title {
   display: flex;
   flex-direction: row;
-
+  background-image: url("../images/pastelArt4.jpg");
   /* justify-content: space-between; */
 }
 
@@ -46,13 +57,13 @@ h1 {
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: rgba(255, 255, 255, 0.95);
 
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color: rgb(252, 116, 93);
 }
 
 #menuToggle input {
@@ -79,7 +90,7 @@ h1 {
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 3px;
 
   z-index: 1;
@@ -102,7 +113,7 @@ h1 {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: rgba(33, 180, 238, 0.548);
 }
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
@@ -118,9 +129,10 @@ h1 {
   width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 145px;
+  border-bottom: solid white 2px;
 
-  background: #ededed;
+  background-image: url("../images/pastelArt4.jpg");
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -137,4 +149,13 @@ h1 {
 /* Slide animation */
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-picture {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 100% 0;
+  }
 }
