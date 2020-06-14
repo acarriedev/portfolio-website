@@ -10,6 +10,7 @@ h1 {
   margin-block-start: 1px;
   margin-block-end: 1px;
   margin-left: 15px;
+  letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.95);
   z-index: 1;
 }
@@ -58,9 +59,41 @@ p {
   padding-right: 50px;
 }
 
-.experience-list {
+.list-basic {
   list-style: none;
   padding-left: 0;
+}
+
+.project-image {
+  width: 100%;
+}
+
+/* CONTACT */
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding-left: 80px;
+}
+
+.contact-icon {
+  width: 70px;
+  padding-right: 23px;
+}
+
+.contact-link {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.contact-link:hover {
+  color: rgb(252, 116, 93);
 }
 
 /* MENU */
@@ -183,8 +216,18 @@ p {
     object-position: 100% 0;
   }
 
-  .information-section {
+  .information-container {
     padding-left: 7px;
     padding-right: 7px;
+  }
+
+  .contact-item {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h2 {
+    font-size: 22px;
   }
 }
