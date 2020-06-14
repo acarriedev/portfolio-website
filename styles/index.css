@@ -119,6 +119,11 @@ h3 {
   text-decoration: underline;
 }
 
+.experience-p {
+  font-size: 18px;
+  line-height: 1.7em;
+}
+
 .experience-education-title {
   text-align: center;
   font-size: 18px;
